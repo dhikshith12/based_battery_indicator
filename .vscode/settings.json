@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.metadata": true,
+    "**/.dart_tool": true,
+    "**/.idea": true,
+    "**/.vscode": true,
+    "**/based_battery_indicator.iml": true,
+    "**/pubspec.lock": true
+  },
+  "explorerExclude.backup": {}
+}
