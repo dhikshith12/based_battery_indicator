@@ -1,39 +1,74 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+<div align="center">
+  <img id="based_battery_indicator" width="96" alt="based_battery_indicator" src="https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/icon.svg">
+  <p>『 based_battery_indicator - Based Battery Indicator! 』</p>
+  <a href="https://github.com/Cierra-Runis/based_battery_indicator/blob/main/README_zh.md">中文 Readme</a>
+</div>
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+`Latest update: 2023-07-27 16:30:49`
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+[📚 Introduction](#-Introduction)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+[📸 Screenshots](#-Screenshots)
 
-## Features
+[📦 How to use](#-How-to-use)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+[⏳ Rate of progress](#-Rate-of-progress)
 
-## Getting started
+[📌 Cautions](#-Cautions)
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+[🧑‍💻 Contributor](#-Contributor)
 
-## Usage
+[🔦 Declaration](#-Declaration)
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+---
+
+# 📚 Introduction
+
+A Based Battery Indicator Widget, Which Helps You Create A Battery Indicator With A iOS-Like Battery Indicator
+
+Inspired by [cupertino_battery_indicator](https://pub.dev/packages/cupertino_battery_indicator)
+
+# 📸 Screenshots
+
+![screenshots_1](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
+
+# 📦 How to use
+
+- Follow [Installing](https://pub.dev/packages/based_battery_indicator/install) to add `based_dock_scaffold` to your `pubspec.yaml`
+
+- Use it as below:
 
 ```dart
-const like = 'sample';
+BasedBatteryIndicator(
+  status: BasedBatteryStatus(
+    value: 80,
+    type: BasedBatteryStatusType.error,
+  ),
+  trackHeight: 10.0,
+  trackAspectRatio: 2.0,
+  curve: Curves.ease,
+  duration: const Duration(second: 1),
+),
 ```
 
-## Additional information
+- For more information, see the example code at [example](https://github.com/Cierra-Runis/based_battery_indicator/blob/master/example/lib/main.dart)
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+# ⏳ Rate of progress
+
+Done, but it will revise if necessary
+
+# 📌 Cautions
+
+None
+
+# 🧑‍💻 Contributor
+
+<a href="https://github.com/Cierra-Runis/based_battery_indicator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Cierra-Runis/based_battery_indicator" />
+</a>
+
+# 🔦 Declaration
+
+[![License](https://img.shields.io/github/license/Cierra-Runis/based_battery_indicator)](https://github.com/Cierra-Runis/based_battery_indicator/blob/main/LICENSE)
+
+This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/Cierra-Runis/based_battery_indicator/blob/main/LICENSE) for more details
