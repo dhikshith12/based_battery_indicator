@@ -30,7 +30,7 @@ Inspired by [cupertino_battery_indicator](https://pub.dev/packages/cupertino_bat
 
 # 📸 Screenshots
 
-![screenshots_1](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
+![screenshot](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
 
 # 📦 How to use
 
@@ -51,7 +51,7 @@ BasedBatteryIndicator(
 ),
 ```
 
-- For more information, see the example code at [example](https://github.com/Cierra-Runis/based_battery_indicator/blob/master/example/lib/main.dart)
+- For more information, see the example code at [example](https://github.com/Cierra-Runis/based_battery_indicator/blob/main/example/lib/main.dart)
 
 # ⏳ Rate of progress
 

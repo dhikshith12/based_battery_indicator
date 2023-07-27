@@ -28,7 +28,7 @@
 
 # 📸 示例
 
-![screenshots_1](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshots_1.png)
+![screenshot](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
 
 # 📦 使用方式
 
