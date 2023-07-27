@@ -1,5 +1,6 @@
 import 'index.dart';
 
+/// [BasedBatteryStatus]
 class BasedBatteryStatus {
   const BasedBatteryStatus({
     required int value,

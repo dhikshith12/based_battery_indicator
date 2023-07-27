@@ -1,5 +1,6 @@
 import 'index.dart';
 
+/// [BasedBatteryIndicator] shows a iOS-like battery indicator with
 class BasedBatteryIndicator extends StatelessWidget {
   const BasedBatteryIndicator({
     super.key,
@@ -10,7 +11,7 @@ class BasedBatteryIndicator extends StatelessWidget {
     this.duration = const Duration(seconds: 1),
   }) : assert(trackAspectRatio >= 1, 'width:height must >= 1');
 
-  /// 电池状态
+  /// battery status
   final BasedBatteryStatus status;
 
   /// The height of the track (i.e. container).
@@ -22,6 +23,7 @@ class BasedBatteryIndicator extends StatelessWidget {
   /// animation curve
   final Curve curve;
 
+  /// animation duration
   final Duration duration;
 
   @override

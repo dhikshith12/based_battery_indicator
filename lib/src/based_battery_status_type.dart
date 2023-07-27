@@ -1,3 +1,4 @@
+/// [BasedBatteryStatusType]
 enum BasedBatteryStatusType {
   error,
   low,
