@@ -11,7 +11,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Brightness brightness = Brightness.light;
+  late bool _isDark = true;
+
+  void changeThemeMode() => setState(() => _isDark = !_isDark);
+
   int value = 0;
   double trackHeight = 10;
   double trackAspectRatio = 2;
@@ -44,10 +47,17 @@ BasedBatteryIndicator(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
-          brightness: brightness,
         ),
         useMaterial3: true,
       ),
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          brightness: Brightness.dark,
+          seedColor: Colors.deepPurple,
+        ),
+        useMaterial3: true,
+      ),
+      themeMode: _isDark ? ThemeMode.dark : ThemeMode.light,
       home: Scaffold(
         appBar: AppBar(
           elevation: 1,
@@ -56,11 +66,7 @@ BasedBatteryIndicator(
           ),
           actions: [
             IconButton(
-              onPressed: () => setState(() {
-                brightness == Brightness.light
-                    ? brightness = Brightness.dark
-                    : brightness = Brightness.light;
-              }),
+              onPressed: changeThemeMode,
               icon: const Icon(
                 Icons.color_lens_outlined,
               ),
