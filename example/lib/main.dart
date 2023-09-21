@@ -39,7 +39,7 @@ BasedBatteryIndicator(
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Based Dock Scaffold Demo',
+      title: 'Based Battery Indicator Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
