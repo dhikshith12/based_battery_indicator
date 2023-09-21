@@ -32,6 +32,8 @@ Inspired by [cupertino_battery_indicator](https://pub.dev/packages/cupertino_bat
 
 ![screenshot](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
 
+Or try out [live example app](https://note-of-me.top/based_battery_indicator/)
+
 # 📦 How to use
 
 - Follow [Installing](https://pub.dev/packages/based_battery_indicator/install) to add `based_dock_scaffold` to your `pubspec.yaml`

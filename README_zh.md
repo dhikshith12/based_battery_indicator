@@ -30,6 +30,8 @@
 
 ![screenshot](https://raw.githubusercontent.com/Cierra-Runis/based_battery_indicator/main/.github/screenshot.gif)
 
+或者试试 [在线示例](https://note-of-me.top/based_battery_indicator/)
+
 # 📦 使用方式
 
 - 按照 [Installing](https://pub.dev/packages/based_battery_indicator/install) 将 `based_battery_indicator` 添加至你的 `pubspec.yaml`
