@@ -43,7 +43,7 @@ class BasedBatteryIndicator extends StatelessWidget {
     final borderColor = colorScheme.outline;
 
     final bar = _buildBar(context, trackHeight * 5 / 6, colorScheme);
-    final icon = _buildIcon();
+    final icon = _buildIcon(colorScheme);
 
     final children = [bar, icon];
 
@@ -52,7 +52,7 @@ class BasedBatteryIndicator extends StatelessWidget {
       width: trackHeight * trackAspectRatio,
       decoration: BoxDecoration(
         borderRadius: borderRadius,
-        border: Border.all(color: borderColor),
+        border: Border.all(color: borderColor, width: 1.5),
       ),
       child: Stack(
         children: children,
@@ -70,28 +70,32 @@ class BasedBatteryIndicator extends StatelessWidget {
     final currentColor = status.getBatteryColor(colorScheme);
 
     return Padding(
-      padding: EdgeInsets.all(trackHeight / 12),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(borderRadius),
-        child: Stack(
-          children: [
-            const SizedBox.expand(),
-            AnimatedContainer(
-              duration: duration,
-              width: barWidth * status.value / 100,
-              height: double.infinity,
-              curve: curve,
-              decoration: BoxDecoration(
-                color: currentColor,
-              ),
+      padding: EdgeInsets.all(trackHeight / 25),
+      child: Stack(
+        children: [
+          const SizedBox.expand(),
+          AnimatedContainer(
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            duration: duration,
+            width: barWidth * status.value / 100,
+            height: double.infinity,
+            curve: curve,
+            decoration: BoxDecoration(
+              color: currentColor,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(borderRadius),
+                bottomLeft: Radius.circular(borderRadius),
+                topRight: const Radius.circular(4), 
+                bottomRight: const Radius.circular(4),
+              )
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 
-  Widget _buildIcon() {
+  Widget _buildIcon(ColorScheme colorScheme) {
     return Center(
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -102,7 +106,7 @@ class BasedBatteryIndicator extends StatelessWidget {
             child: status.type.isCharing
                 ? Icon(
                     Icons.electric_bolt,
-                    color: Colors.white,
+                    color: colorScheme.primary,
                     size: constraints.maxHeight,
                     shadows: const [
                       Shadow(blurRadius: 0.5),
