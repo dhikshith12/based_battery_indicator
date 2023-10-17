@@ -108,10 +108,10 @@ class BasedBatteryIndicator extends StatelessWidget {
                     Icons.electric_bolt,
                     color: colorScheme.primary,
                     size: constraints.maxHeight,
-                    shadows: const [
-                      Shadow(blurRadius: 0.5),
+                    shadows: [
+                      const Shadow(blurRadius: 0.5),
                       Shadow(
-                        color: Colors.white,
+                        color: colorScheme.primary,
                         blurRadius: 1,
                       ),
                     ],
